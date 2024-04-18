@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SV Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- For the slideshow -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.slider').bxSlider();
+});
+</script>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><a href="index.html"><img src="img/svlogo.svg" alt="Sara Veith Logo"></a></div>
+            <div class="flex">
+                <div class="about"><a href="about.html">ABOUT</a></div>
+                <div class="work"><a href="work.html">WORK</a></div>
+                </div>
+                  <div id="menuToggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <a href="about.html"><li>ABOUT</li></a>
+                    <a href="work.html"><li>WORK</li></a>
+                  </ul>
+                </div>
+    </div>
+    <div class="carousel">
+        <div class="slideshow">
+            <div class="slider">
+              <div class="slide"><img src="img/homepage.jpg" width="110%"></div>
+              <div class="slide"><img src="img/website.png" width="100%"></div>
+            <div class="slide"><img src="img/final nokia cover png.png" width="65%"></div> 
+              </div>
+              </div> 
+    </div>
+    <div class="aboutme">
+        <h2>A little bit about me</h2>
+        <p>Hi there! I'm an Undergraduate Student and a Graphic Designer based in New York with over 3 years of experience. I'm from Long Island, NY and I'm currently studying design at SUNY New Paltz. I'm passionate about art and design, especially branding and web design. If you wish to know more about me or my work, feel free to reach out and ask questions via email.</p>
+    </div>
+    <div class="contact">
+        <div class="form">
+            <div class="form-box">
+                <h1>Contact Me</h1>
+                <p>I would love to work with you!</p>
+                <form action="https://api.formbucket.com/f/c2K3QTQ" method="post">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" id="name" type="text" name="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" id="email" type="email" name="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="Message"></textarea>
+                  </div>
+                  <input class="btn btn-primary" type="submit" value="Submit" />
+                  </div>
+                </form>
+              </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info">
+            <p>sveith02@gmail.com</p>
+            <p>516-592-9373</p>
+        </div>
+        <div class="copyright">
+            <p>© Sara Veith 2023</p>
+        </div>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/sara-veith-041b0223a"><img src="img/linkedin.png"></a>
+            <a href="https://my.indeed.com/p/sarav-rhltfgg"><img src="img/indeed.png"></a>
+        </div>
+    </div>
+
+   
+</body>
+</html>

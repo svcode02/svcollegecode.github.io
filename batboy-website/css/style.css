@@ -1,0 +1,125 @@
+body {
+    color: #B3B3B3;
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Nosifer', cursive; 
+    font-size: 8em;
+    
+}
+
+h2 {
+    font-family: 'Special Elite', cursive;
+}
+
+h3 {
+    font-family: 'Nosifer', cursive;
+    font-size: 4em;
+}
+
+ button {
+    font-family: 'Special Elite', cursive; 
+    background-color: #B3B3B3;
+    border: none;
+    padding: 5%;
+    font-size: 3em;
+    margin: auto;
+}
+
+button:hover {
+    font-family: 'Special Elite', cursive; 
+    background-color: black;
+    color: #B3B3B3;
+    border: 5px;
+    border-color: #B3B3B3;
+    padding: 5%;
+    font-size: 3em;
+    margin: auto;
+}
+
+button:visited {
+    font-family: 'Special Elite', cursive; 
+    background-color: #965151;
+    border: none;
+    padding: 5%;
+    font-size: 3em;
+    margin: auto;
+}
+
+.wrapper h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    padding-top: 3%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.times {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1 {
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+}
+
+.batboy {
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+}
+
+.batboy h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.img2 {
+    grid-column: 4 / 4;
+    grid-row: 1 / 2;
+}
+
+.title img {
+    max-width: 300px;
+    padding: 30px;
+}
+
+.info {
+    padding-bottom: 2%;
+}
+
+.staff {
+    padding-bottom: 5%;
+}
+
+.info p {
+    font-family: 'Special Elite', cursive;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff p {
+    font-family: 'Special Elite', cursive;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

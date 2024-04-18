@@ -1,0 +1,140 @@
+* {
+    margin: auto;
+}
+
+.header {
+    background-image: url(img/photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+ max-width: 1200px;
+ padding: 10% 20% 10% 20%;
+}
+
+.logo img {
+    animation: slide 1s;
+}
+@keyframes slide {
+    from{transform: translateX(-100%);}
+    to{transform: translateX(0%);} }
+
+.about {
+    color: white;
+    font-family: europa, sans-serif;
+    background-color: #4C301B;
+    padding: 3% 25% 3% 25%;
+    font-size: 15pt;
+}
+
+.about p {
+    padding-top: 2%;
+}
+
+.doordash {
+    color: white;
+    font-family: europa, sans-serif;
+    font-size: 15pt;
+    background-color: #AA3621;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.about a {
+    text-decoration: none;
+}
+
+.about button:hover {
+    background-color: #bd711f;
+}
+
+.menu {
+    padding: 3% 25% 3% 25%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.item {
+    width: 400px;
+}
+
+.menu h2 {
+    font-family: europa, sans-serif;
+    font-weight: 300;
+    font-size: 25pt;
+    padding-bottom: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu h4 {
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    padding-bottom: .5%;
+    padding-top: 6%;
+    font-size: 15pt;
+}
+
+.menu p {
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+.footer {
+    color: white;
+    font-family: europa, sans-serif;
+    font-size: 12pt;
+    line-height: 20pt;
+    background-color: #4C301B;
+    padding: 3% 5% 3% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact h3 {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 700px) {
+
+.header {
+    height: 900px;
+}
+
+.logo {
+    padding-top: 50%;
+    width: 350px;
+}
+
+.about  {
+    font-size: 12pt;
+    padding: 8% 25% 8% 25%;
+}
+
+.about button {
+    margin-bottom: 10%;
+}
+
+.menu h2 {
+    padding-top: 7%;
+}
+
+.footer {
+    margin-top: 20%;
+    padding: 5% 5% 5% 5%;
+}
+
+}

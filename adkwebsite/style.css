@@ -1,0 +1,791 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* HTML AND BODY */
+
+html {
+    margin: 0px;
+}
+
+
+body {
+ font-family: sans-serif;
+  margin: 0 auto;
+  font-size: 1.5em;
+    
+}
+
+.container {
+ width: 65%;   
+      margin: 0 auto;
+}  
+
+
+#homepage {
+    
+  
+    background-image: url(images/adk1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#recreationpage {
+    
+    
+    background-image: url(images/hike.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#attractionspage {
+      
+    background-image: url(images/lakeplacid1.jpeg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10%;
+
+}
+
+
+/* NAV */
+
+#mainmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #346600;
+   
+    margin-top: 0%;
+    
+}
+
+
+
+.navname {
+margin: 0 0 0 10px;
+width: 25%;
+}
+
+.navname img {
+    max-height: 200px;
+}
+
+.navname a:hover {
+    background-color: none;
+}
+
+
+.navname a:hover img {
+    background-color: #1A3000;
+   
+}
+
+.navbar {
+    display: flex;
+    
+}
+
+.navbar a {
+    display: block;
+    padding: 1em;
+}
+
+
+#mainmenu a:link, #mainmenu a:visited {
+    text-decoration: none;
+    color: white;
+       padding: 5px;
+
+      
+}
+
+#mainmenu a:hover {
+    color: #CEA446;
+    padding: 5px;
+
+
+}
+
+#mainmenu ul li {
+   padding: 5px;
+   margin-right: 20px;
+
+    
+}
+
+
+
+ul, li {
+    list-style: none;
+    text-decoration: none;
+  
+}
+/* LOGO */
+.logo {
+    margin: 0 auto;
+    padding: 5% 0 10%;
+    max-width: 60%;
+}
+
+.logomobile {
+    display: none;
+}
+
+/*HEADER STYLES*/
+h1 {
+    font-family: europa, sans-serif;
+    text-align: center;
+    padding: 100px 50px 0px;
+    margin: 0px 0px 10px;
+    color: black;
+    font-size: 7em;
+    
+  
+}
+
+h2 {
+    font-family: europa, sans-serif;
+    text-align: center;
+
+    
+}
+
+
+
+h3 {
+    font-family: europa, sans-serif;
+    
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin: 0 5% 0 5%;
+    padding-top: 2.5%; 
+    padding-bottom: 2%; 
+
+}
+
+h4 {
+    
+    margin: 20px 0px;
+    font-size: 28px;
+    font-family: europa, sans-serif;
+    color: black;
+}
+
+hr {
+
+    margin: 30px 0;
+}
+
+
+/*BUTTON STYLES*/
+button {
+    font-family: europa, sans-serif;
+    color: #346600;
+    border: 3.5px solid #346600;
+    padding: 3px 5px 3px 5px;
+    font-size: 1.25em;
+    background: white;
+}
+
+button:hover, button a:hover {
+    background: white;
+    color: #7F3A00;
+    border: 3.5px solid #7F3A00;
+}
+
+
+/*LINK STYLES*/
+a:link, a:visited {
+    color: #7F3A00;
+}
+
+a:hover {
+    color: #CEA446;
+}
+
+
+
+
+
+/*MAIN SECTION*/
+.home {
+    margin: 20px 0 0 0;
+    padding: 0px 10px 10px;
+   display: grid; 
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-gap: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: white;
+}
+
+
+
+
+
+
+/* HOME PAGE */
+
+.homemenu {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 600px 600px; 
+    grid-template-rows: auto;
+    grid-column-gap: 7%;
+
+    padding-top: 10%;
+
+}
+
+
+.recreation {
+    background-image: url(images/adk2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20%;
+    max-width: 600px;
+   
+
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-family: europa, sans-serif;
+    
+}
+
+.attractions {
+    background-image: url(images/attractions.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20%;
+    max-width: 600px;
+    
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-family: europa, sans-serif;
+    
+    
+}
+
+
+.caption {
+    background-image: linear-gradient(to bottom, #35660000, #346600);
+    
+}
+
+
+
+
+.abouttext {
+    padding-top: 10%;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+.abouttext p {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 1.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.abouttext h4 {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 2%;
+}
+
+
+#video {
+    padding-top: 15%;
+}
+
+#map {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+
+.slideshow {
+    max-width: 80%;
+    max-height: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.gallery {
+    padding-bottom: 15%;
+}
+
+
+
+/* RECREATION PAGE */
+#recreationpage h2 {
+    font-size: 3em;
+    padding-top: 45%;
+    color: white;
+}
+
+.recreation-one {
+    padding-top: 10%;
+}
+
+
+.recreation-one, .recreation-two, .recreation-three {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 10%;
+  
+}
+
+.recreation-one img, .recreation-two img, .recreation-three img {
+    max-width: 50%;
+}
+
+.recreation-text {
+    padding-left: 5%;
+    font-family:'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+  
+}
+
+.recreation-text h4{
+
+    font-size: 1.5em;
+  
+}
+.recreation-text button {
+    margin-top: 3%;
+}
+
+
+#recreation-main
+{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+
+
+/* ATTRACTIONS PAGE */
+
+
+#attractionspage h2 {
+    font-size: 3em;
+    padding-top: 45%;
+    color: white;
+}
+
+#attractionspage #mainmenu {
+    margin-top: -10%;
+}
+
+.attraction-one {
+    padding-top: 10%;
+}
+
+
+.attraction-one, .attraction-two, .attraction-three {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 10%;
+  
+}
+
+.attraction-one img, .attraction-two img, .attraction-three img {
+    max-width: 50%;
+}
+
+.attraction-text {
+    padding-left: 5%;
+    font-family:'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+  
+}
+
+.attraction-text h4{
+
+    font-size: 1.5em;
+  
+}
+.attraction-text button {
+    margin-top: 3%;
+}
+
+
+#attractions-main
+{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/* RESOURCES PAGE */
+
+.resources {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.resources li{
+    padding-bottom: 3%;
+}
+
+.resources h4{
+    padding-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+/*FOOTER */
+footer
+{
+   font-size: 20px;
+   font-family: europa, sans-serif;
+   
+    background-color:#346600; 
+    padding: 50px 0 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: 40px auto 0; 
+    
+}
+
+footer ul {
+    margin: 0% 3% 5% 5%;
+    width: 100%;
+  
+}
+
+footer ul li {
+    line-height: 35px;
+    display: block;
+}
+
+
+footer .footernav a:hover {
+    color: #CEA446;
+}
+
+footer .icons {
+   margin:0px 3px 0 0;
+    width: 30%;
+}
+
+.social {
+    margin-bottom: 10%;
+}
+
+.credit {
+    font-size: 18px;
+    padding-left: 100px;
+}
+
+.heading{
+    font-weight: 800;
+}
+
+footer a:link, footer a:visited {
+    color: white;
+}
+
+/* Using CSS Filters for the drop shadow effect */
+.social img.icons:hover {
+    filter: drop-shadow(2px 2px 4px black);
+}
+
+
+/* 404? */
+
+h6 {
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5%;
+}
+
+
+
+
+
+/*MOBILE DEVICES*/
+@media (max-width: 700px){
+
+    html {
+            height: 100%;
+ 
+   }
+
+#homepage, #recreationpage, #attractionspage {
+    padding-top: 80%;
+}
+
+#recreationpage {
+    background-position: 15%;
+}
+   
+
+
+.container {
+    width: 90%;
+}
+
+.caption {
+    padding-top: 20%;
+}
+
+.navname, .navbar {
+        display: none;
+    }
+    
+    #menuitems a:visited{
+        color:white;
+    }
+    
+    #menuitems a:hover{
+        color:#CEA446;
+    }
+    
+
+
+    .logo {
+      max-width: 700px;
+      margin-top: -30%;
+      padding-bottom: 40%;
+    }
+
+    
+    h1 {
+        
+        font-size: 120px;
+        line-height: 100px;
+    }
+    
+    header p {
+        font-size: 18px;
+        padding: 20px 40px;
+        
+    }
+    
+    main p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+  
+    .homemenu {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 10%;   
+    }
+
+    .recreation {
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+    .attractions {
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+
+    .abouttext {
+        font-size: .9em;
+        line-height: 1.3em;
+    }
+
+    .abouttext p {
+        padding-bottom: 5%;
+    }
+
+    .abouttext h4 {
+        padding-top: 5%;
+    }
+
+    .slideshow {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+
+    
+    .attraction-one, .attraction-two, .attraction-three {
+       flex-direction: column; 
+       padding-bottom: 20%;
+    }
+    
+    .attraction-text {
+        font-size: .9em;
+        line-height: 1.3em;
+    }
+
+    .recreation-text {
+        font-size: .9em;
+        line-height: 1.3em;
+    }
+
+   
+     .recreation-one, .recreation-two, .recreation-three {
+        flex-direction: column; 
+        padding-bottom: 20%;
+    }
+ 
+            .attraction-one img, .attraction-two img, .attraction-three img{
+            max-width: 700px;
+            }
+        
+            .recreation-one img, .recreation-two img, .recreation-three img{
+             max-width: 700px; 
+            }
+
+        .attraction-one img{
+            padding-top: 20%;
+        }
+
+        .recreation-one img{
+            padding-top: 20%;
+        }
+
+        #homepage h3 {
+            margin-top: -5%;
+            padding-bottom: 5%;
+        }
+
+        #attractionspage h2 {
+            margin-top: -25%;
+            padding-bottom: 80%;
+            font-size: 3em; 
+        }
+    
+        #recreationpage h2 {
+            margin-top: -25%;
+            padding-bottom: 90%;
+            font-size: 3em;
+        }
+    
+        #attractionspage h3 {
+            font-size: 1em;
+            line-height: 1.25em;
+        }
+
+        #recreationpage h3 {
+            font-size: 1em;
+            line-height: 1.25em;
+        }
+
+
+        h4 {
+        padding-top: 8%;
+    }
+    
+
+    
+        footer {
+        display: block;
+        justify-content: left;
+    }
+    
+    footer li {
+        font-size: 18px;
+    }
+    
+    .footlogo {
+       max-width: 300px; 
+       margin-left: -5%;
+    }
+
+    .credit {
+        text-align: left;
+        padding-left: 0%;
+
+    }
+
+    .social {
+        max-width: 400px;
+        margin-left: -5%;
+       
+    }
+
+
+
+    
+}
+
+  
