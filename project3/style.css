@@ -1,0 +1,650 @@
+* {
+    margin: auto;
+}
+
+/* calendar */
+
+.calendar {
+	text-align: center;
+}
+
+.calendar header {
+	position: relative;
+}
+
+.calendar h2 {
+	text-transform: uppercase;
+}
+
+.calendar thead {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.calendar tbody {
+	color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+	border: 2px solid #A53232;
+}
+
+.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	width: 4em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+	color: #cbd1d2;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+	border: 2px solid #cbd1d2;
+}
+
+.current-day {
+	background: #A53232;
+	color: #f9f9f9;
+}
+
+.event {
+	cursor: pointer;
+	position: relative;
+}
+
+.event:after {
+	background: #A53232;
+	border-radius: 50%;
+	bottom: .5em;
+	display: block;
+	content: '';
+	height: .5em;
+	left: 50%;
+	margin: -.25em 0 0 -.25em;
+	position: absolute;
+	width: .5em;
+}
+
+.event.current-day:after {
+	background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+	border: 2px solid #cbd1d2;
+	border-radius: 50%;
+	color: #cbd1d2;
+	height: 2em;
+	font-size: .75em;
+	line-height: 2em;
+	margin: -1em;
+	position: absolute;
+	top: 50%;
+	width: 2em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background: #cbd1d2;
+	color: #f9f9f9;
+}
+
+.btn-prev {
+	left: 6em;
+}
+
+.btn-next {
+	right: 6em;
+}
+
+/* hamburger menu */
+
+#menuToggle {
+    display: none;
+    }
+    
+    #menuToggle input
+    {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      
+      cursor: pointer;
+      
+      opacity: 0; 
+      z-index: 2; 
+      
+      -webkit-touch-callout: none;
+    }
+    
+    #menuToggle span
+    {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      
+      background: #000000;
+      border-radius: 3px;
+      
+      z-index: 1;
+      
+      transform-origin: 4px 0px;
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+    }
+    
+    #menuToggle input:checked ~ span
+    {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #000000;
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+      opacity: 1;
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #menu
+    {
+      position: absolute;
+      width: 500px;
+      margin: -100px 0 0 0;
+      padding: 50px;
+      padding-top: 100px;
+      padding-bottom: 80px;
+      right: -100px;
+      
+      background: #F6F3ED;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      transform-origin: 0% 0%;
+      transform: translate(100%, 0);
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menu li
+    {
+      font-size: 35px;
+      color: black;
+      line-height: 40pt;
+      font-weight: 700;
+      font-family: bradley-djr, sans-serif;
+      padding-left: 10%;
+    }
+    
+    #menu a {
+      text-decoration: none;
+    }
+    
+    #menu li:hover {
+      color: #A53232;
+    }
+    
+    #menuToggle input:checked ~ ul
+    {
+      transform: none;
+      opacity: 1;
+    }
+
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F3ED;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 15%;
+    font-family: bradley-djr, sans-serif;
+    color: black;
+    font-size: 30pt;
+}
+
+.flex a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex a:hover {
+    color: #A53232;
+}
+
+.logo img {
+    width: 450px;
+}
+
+.logo img:hover {
+    opacity: 50%;
+}
+
+.arrow {
+    max-width: 70px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.header {
+    background-image: url(img/homepage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20% 20% 20% 20%;
+}
+
+.header h1 {
+    color: white;
+    font-family: bradley-djr, sans-serif;
+    font-size: 95pt;
+    display: flex;
+    justify-content: center;
+}
+
+.header2 {
+    background-image: url(img/tickets.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20% 20% 20% 20%;
+}
+
+.header2 h1 {
+    color: white;
+    font-family: bradley-djr, sans-serif;
+    font-size: 95pt;
+    display: flex;
+    justify-content: center;
+}
+
+.header3 {
+    background-image: url(img/marketplace.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20% 20% 20% 20%;
+}
+
+.header3 h1 {
+    color: white;
+    font-family: bradley-djr, sans-serif;
+    font-size: 95pt;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    background-color: #F6F3ED;
+    padding: 2% 0% 3% 0%;
+}
+
+.footrlogo img {
+    width: 350px;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 7%;
+}
+
+.socials img {
+    width: 100px;
+}
+
+.socials img:hover {
+    opacity: 50%;
+}
+
+.info {
+    font-family: 'Crimson Pro', serif;
+    font-size: 15pt;
+    line-height: 18pt;
+}
+
+.info p {
+    padding-left: 10%;
+}
+
+h2 {
+    font-family: bradley-djr, sans-serif;
+    font-size: 40pt;
+}
+
+.about {
+    padding: 5% 25% 2% 25%;
+}
+
+.about p {
+    font-family: 'Crimson Pro', serif;
+    font-size: 15pt;
+    line-height: 18pt;
+    padding-bottom: 2%;
+}
+.about h2 {
+    padding-bottom: 2%;
+}
+
+.themewkends {
+    padding: 2% 25% 3% 25%;
+}
+.themewkends h6 {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 700;
+    font-size: 18pt;
+    padding-top: 2%;
+
+}
+.themewkends p {
+    font-family: 'Crimson Pro', serif;
+    font-size: 15pt;
+    color: #A53232;
+}
+
+.directions {
+    padding: 2% 25% 5% 25%;
+}
+
+.directions p {
+    font-family: 'Crimson Pro', serif;
+    font-size: 15pt;
+    line-height: 18pt;
+    padding-top: 2%;
+}
+
+.map {
+    padding-top: 5%;
+    max-width: 700px;
+}
+
+.pricing {
+    padding: 2% 25% 5% 25%;
+}
+
+.pricing p {
+    font-family: 'Crimson Pro', serif;
+    font-size: 15pt;
+    line-height: 18pt; 
+}
+
+.pricing a {
+    color: #A53232;
+}
+
+.prices {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin-left: -27%;
+    padding-top: 4%;
+}
+
+.price {
+    text-align: right;
+    font-weight: 700;
+}
+
+.parking {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin-left: -26.5%;
+}
+
+.parkprice {
+    text-align: right;
+    font-weight: 700;
+}
+
+.pickdate {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid gray;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.calendar h3 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 24pt;
+    padding-bottom: 1%;
+}
+
+.calendar {
+    padding-bottom: 5%;
+    font-family: 'Crimson Pro', serif;
+    font-size: 15pt;
+}
+
+.shop {
+    padding: 3% 25% 4% 25%;
+    border-bottom: 1px solid gray;
+}
+
+.shop h2 {
+    padding-bottom: 2%;
+}
+.shop p {
+    font-family: 'Crimson Pro', serif;
+    font-size: 15pt;
+}
+
+.slideshow {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.carousel {
+    padding-bottom: 3%;
+}
+
+.carousel h3 {
+    display: flex;
+    justify-content: center;
+    font-family: bradley-djr, sans-serif;
+    font-size: 30pt;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+@media only screen and (max-width: 700px) {
+
+    #menuToggle
+    {
+      display: block;
+      position: absolute;
+      right: 50px;
+      
+      z-index: 1;
+      
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+.flex {
+    display: none;
+}
+
+.logo img {
+    width: 300px;
+    margin-left: -30%;
+}
+
+.header h1 {
+    font-size: 45pt;
+    line-height: 50pt;
+    text-align: center;
+}
+
+.header2 h1 {
+    font-size: 45pt;
+    line-height: 50pt;
+    text-align: center;
+}
+
+.header3 h1 {
+    font-size: 45pt;
+    line-height: 50pt;
+    text-align: center;
+}
+
+.arrow {
+    display: none;
+}
+
+.about {
+    padding: 5% 10% 5% 10%;
+}
+
+.about p {
+    font-size: 12pt;
+    line-height: 15pt;
+}
+h2 {
+    font-size: 28pt;
+    line-height: 32pt;
+}
+
+.themewkends {
+    padding: 5% 10% 5% 10%;
+}
+
+.themewkends p {
+    font-size: 12pt;
+    line-height: 15pt;
+}
+
+.themewkends h6 {
+    font-size: 14pt;
+    line-height: 15pt;
+}
+
+.directions {
+    padding: 5% 10% 5% 10%;
+}
+
+.directions p {
+    font-size: 12pt;
+    line-height: 15pt;
+}
+
+.map iframe {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 2.7em;
+	line-height: 2.7em;
+	text-align: center;
+	width: 2.7em;
+}
+
+.calendar h3 {
+    font-size: 20pt;
+}
+
+.calendar {
+    padding-top: 4%;
+    padding-bottom: 6%;
+}
+
+.pricing {
+    padding: 5% 10% 5% 10%;
+}
+
+.pricing p {
+    font-size: 12pt;
+    line-height: 15pt; 
+}
+
+.prices {
+    margin-left: -21%;
+}
+.parking {
+    margin-left: -20%;
+}
+
+.footer {
+    flex-wrap: wrap;
+}
+
+.footrlogo img {
+    width: 300px;
+}
+
+.shop p {
+    font-size: 12pt;
+    line-height: 15pt; 
+}
+
+.shop {
+    padding: 5% 10% 8% 10%;
+}
+
+.carousel h3 {
+    font-size: 24pt;
+    padding-top: 8%;
+    padding-bottom: 2%;
+}
+
+.carousel {
+    max-width: screen;
+}
+
+.info p {
+    font-size: 12pt;
+    line-height: 15pt;
+}
+
+.socials {
+    padding-top: 35%;
+}
+.socials img {
+    width: 60px;
+}
+
+
+}
